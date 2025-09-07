@@ -31,6 +31,8 @@ public class StudentService {
         existing.setName(student.getName());
         existing.setEmail(student.getEmail());
         existing.setPhone(student.getPhone());
+        existing.setAge(student.getAge());
+        existing.setDate(student.getDate());
         return repository.save(existing);
     }
 

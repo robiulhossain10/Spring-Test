@@ -3,6 +3,8 @@ package com.abc.SpringCrud.Entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -15,6 +17,24 @@ public class Student {
     private String name;
     private String email;
     private String phone;
+    private Integer age;
+    private LocalDate date;
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
 
     public Long getId() {
         return id;
