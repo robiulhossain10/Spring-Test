@@ -30,6 +30,7 @@ public class StudentService {
         Student existing = getById(id);
         existing.setName(student.getName());
         existing.setEmail(student.getEmail());
+        existing.setPhone(student.getPhone());
         return repository.save(existing);
     }
 
